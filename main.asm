@@ -1,11 +1,11 @@
 global _start
 
-%include "errors.s"
+%include "errors.asm"
 
 section .text
 
-%include "utils.s"
-%include "syscalls.s"
+%include "utils.asm"
+%include "syscalls.asm"
 
 _start:
 	mov rdi, 1
